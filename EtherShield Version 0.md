@@ -6,7 +6,7 @@
 
 **Architecture:**
 
-![WechatIMG3](/Users/cmouse/Documents/Columbia Spring 2019/E6901 Projects in Computer Science/WechatIMG3.jpeg)
+![WechatIMG3](/Users/cmouse/Documents/Columbia Spring 2019/E6901 Projects in Computer Science/ethershield/WechatIMG3.jpeg)
 
 **Tunnel establishment:**
 
@@ -30,9 +30,9 @@ mininet> sh ovs-vsctl add-port s1 s1-gre1 -- set interface s1-gre1 type=gre opti
 
 The two protected devices can ping each other. On the `s1-eth1` interface, we see regular `icmp` traffic. On the VM's `eth0` interface, we see encapsulated traffic (encryption did not seem to work - will fix this issue later).
 
-![WechatIMG5](/Users/cmouse/Documents/Columbia Spring 2019/E6901 Projects in Computer Science/WechatIMG5.jpeg)
+![WechatIMG5](/Users/cmouse/Documents/Columbia Spring 2019/E6901 Projects in Computer Science/ethershield/WechatIMG5.jpeg)
 
-![WechatIMG6](/Users/cmouse/Documents/Columbia Spring 2019/E6901 Projects in Computer Science/WechatIMG6.jpeg)
+![WechatIMG6](/Users/cmouse/Documents/Columbia Spring 2019/E6901 Projects in Computer Science/ethershield/WechatIMG6.jpeg)
 
 
 
@@ -95,3 +95,4 @@ Connecting VMs Using Tunnels: http://docs.openvswitch.org/en/latest/howto/tunnel
 Connecting two Mininet networks with GRE tunnel – Part 2: https://techandtrains.com/2014/01/20/connecting-two-mininet-networks-with-gre-tunnel-part-2/
 
 Examining Open vSwitch Traffic Patterns: https://blog.scottlowe.org/2013/05/15/examining-open-vswitch-traffic-patterns/#scenario-3-the-isolated-bridge
+
