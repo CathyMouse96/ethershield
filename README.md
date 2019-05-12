@@ -10,6 +10,13 @@
 Note: the IPs for the virtual hosts should be in the same subnet, and also in the same subnet as the host-only adapter. I.e. IP of host-only adapter is `10.0.0.1/8`, IP for one virtual host is `10.0.0.3/8`, IP for the other virtual host is `10.0.0.4/8`.
 Also, note that in unprotected mode, the VMs are acting as switches and do not have IP addresses!
 
+## Usage
+Switch from unprotected mode to protected mode:
+Run `to_pro.sh` (remember to change the IP addresses in the file first!). Now, when the two virtual hosts ping each other, you can see that the traffic going in and out of the VMs' Ethernet interfaces is encapsulated!
+
+Switch from protected mode to unprotected mode:
+Run `to_unpro.sh`. Now, when the two virtual hosts ping each other, the traffic going in and out of the VMs' Ethernet interfaces is regular traffic again.
+
 ## Version 1 Due 04/18/19
  - Set up strongSwan
  - Set up tunclient
