@@ -18,7 +18,7 @@ Switch from protected mode to unprotected mode:
 Run `to_unpro.sh`. Now, when the two virtual hosts ping each other, the traffic going in and out of the VMs' Ethernet interfaces is regular traffic again.
 
 ## Version 1 Due 04/18/19
- - Set up strongSwan
+ - Set up strongSwan -- DONE
  - Set up tunclient
  - Script to initialize Open vSwitch
  - Script to modify behavior of Open vSwitch and start/stop IPsec
